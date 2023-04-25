@@ -1,5 +1,13 @@
+function reverseString(word) {
+  reversed = '';
+  for (let j = word.length -1; 0 <= j; j--){
+    reversed += word[j];
+  }
+  return reversed;
+}
 function isPalindrome(word) {
   // Write your algorithm here
+  return reverseString(word) == word;
 }
 
 /* 
